@@ -7,47 +7,146 @@
   <meta name="description" content="So sánh các giải pháp vay tiền nhanh và uy tín tại Việt Nam. Tham gia kênh Telegram để nhận ưu đãi.">
   <meta name="keywords" content="vay tiền, vay nhanh, tài chính, tiền online, ứng dụng vay, Asia Gid">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5e8c7 0%, #f9f5e7 100%);
+      font-family: 'Noto Serif', serif;
+    }
+    header {
+      background: linear-gradient(to bottom, #d32f2f, #b71c1c);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      opacity: 0.1;
+    }
+    .asian-pattern {
+      background-image: url('https://www.transparenttextures.com/patterns/asanoha.png');
+      background-size: 100px;
+      opacity: 0.05;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .offer-card {
+      background: white;
+      border: 2px solid #d32f2f;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .offer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .offer-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+      transform: rotate(45deg);
+      opacity: 0.3;
+    }
+    .btn-telegram {
+      background: #0088cc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 50px;
+      padding: 12px 24px;
+      font-weight: bold;
+    }
+    .btn-telegram:hover {
+      background: #006699;
+    }
+    footer {
+      background: #2c2c2c;
+      color: #f5e8c7;
+    }
+    .decorative-icon {
+      position: absolute;
+      opacity: 0.1;
+      font-size: 80px;
+      color: #d32f2f;
+    }
+    .decorative-icon-top {
+      top: 10px;
+      left: 10px;
+    }
+    .decorative-icon-bottom {
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 relative">
+  <div class="asian-pattern"></div>
 
   <!-- Header -->
-  <header class="bg-white shadow p-6 text-center">
-    <h1 class="text-3xl font-bold">Asia Gid</h1>
-    <p class="mt-2 text-gray-600">So sánh các giải pháp vay tiền nhanh và uy tín tại Việt Nam</p>
-    <div class="mt-4 flex justify-center gap-4 flex-wrap">
-      <a href="https://t.me/YourChannel" class="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">Kênh Telegram</a>
-      <a href="https://t.me/YourChat" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">Chat Telegram</a>
+  <header class="shadow p-8 text-center relative">
+    <h1 class="text-4xl font-bold tracking-wide">Asia Gid</h1>
+    <p class="mt-2 text-lg text-gray-200">Diễn đàn cho du khách và cư dân địa phương. Chi tiết hơn trong Telegram.</p>
+    <div class="mt-6 flex justify-center gap-6 flex-wrap">
+      <a href="https://t.me/asiagidforum" class="btn-telegram text-white shadow hover:bg-blue-700 transition">
+        <i class="fab fa-telegram-plane"></i> Kênh Telegram
+      </a>
+      <a href="https://t.me/+NT5pVv45Hy0yZjVi" class="btn-telegram text-white shadow hover:bg-blue-700 transition">
+        <i class="fas fa-comment-dots"></i> Chat Telegram
+      </a>
     </div>
   </header>
 
   <!-- Offers Section -->
-  <section class="max-w-5xl mx-auto py-12 px-4 grid md:grid-cols-3 gap-6">
-    <!-- Оффер 1 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <h2 class="text-xl font-semibold mb-2">MoneyCat</h2>
+  <section class="max-w-5xl mx-auto py-12 px-4 grid md:grid-cols-3 gap-6 relative">
+    <!-- Offer 1 -->
+    <div class="offer-card p-6">
+      <i class="fas fa-yen-sign decorative-icon decorative-icon-top"></i>
+      <h2 class="text-xl font-semibold mb-2 text-red-700">MoneyCat</h2>
       <p class="text-gray-600 mb-4">Đăng ký trực tuyến, giải ngân trong ngày, không cần thế chấp.</p>
-      <a href="#" class="block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Đăng ký ngay</a>
+      <a href="#" class="block w-full text-center bg-red-600 text-white py-2 rounded-full hover:bg-red-700 transition">Đăng ký ngay</a>
+      <i class="fas fa-coins decorative-icon decorative-icon-bottom"></i>
     </div>
 
-    <!-- Оффер 2 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <h2 class="text-xl font-semibold mb-2">Cash24</h2>
+    <!-- Offer 2 -->
+    <div class="offer-card p-6">
+      <i class="fas fa-yen-sign decorative-icon decorative-icon-top"></i>
+      <h2 class="text-xl font-semibold mb-2 text-red-700">Cash24</h2>
       <p class="text-gray-600 mb-4">Khoản vay ngắn hạn, thủ tục nhanh chóng, hỗ trợ khách hàng 24/7.</p>
-      <a href="#" class="block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Đăng ký ngay</a>
+      <a href="#" class="block w-full text-center bg-red-600 text-white py-2 rounded-full hover:bg-red-700 transition">Đăng ký ngay</a>
+      <i class="fas fa-coins decorative-icon decorative-icon-bottom"></i>
     </div>
 
-    <!-- Оффер 3 -->
-    <div class="bg-white rounded-xl shadow p-6">
-      <h2 class="text-xl font-semibold mb-2">OnCredit</h2>
+    <!-- Offer 3 -->
+    <div class="offer-card p-6">
+      <i class="fas fa-yen-sign decorative-icon decorative-icon-top"></i>
+      <h2 class="text-xl font-semibold mb-2 text-red-700">OnCredit</h2>
       <p class="text-gray-600 mb-4">Ứng dụng tài chính uy tín, hạn mức linh hoạt, giải ngân nhanh.</p>
-      <a href="#" class="block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Đăng ký ngay</a>
+      <a href="#" class="block w-full text-center bg-red-600 text-white py-2 rounded-full hover:bg-red-700 transition">Đăng ký ngay</a>
+      <i class="fas fa-coins decorative-icon decorative-icon-bottom"></i>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 py-6 mt-12 text-center text-sm text-gray-500">
+  <footer class="py-6 mt-12 text-center text-sm">
     <p>Chúng tôi không cung cấp khoản vay trực tiếp, chỉ giới thiệu dịch vụ tài chính.</p>
-    <p>©2025 Asia Gid — Liên hệ: contact@asiagid.vn</p>
+    <p>©2025 Asia Gid — Liên hệ: <a href="mailto:contact@asiagid.vn" class="underline">contact@asiagid.vn</a></p>
   </footer>
 
 </body>
