@@ -34,6 +34,8 @@
       height: 100%;
       background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
       opacity: 0.1;
+      z-index: -1;
+      pointer-events: none;
     }
     .asian-pattern {
       background-image: url('https://www.transparenttextures.com/patterns/asanoha.png');
@@ -44,7 +46,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      z-index: -2;
+      pointer-events: none;
     }
     .offer-card {
       background: white;
@@ -56,6 +59,7 @@
       opacity: 0;
       transform: translateY(20px);
       animation: slideUp 0.5s ease forwards;
+      z-index: 1;
     }
     @keyframes slideUp {
       to {
@@ -77,10 +81,12 @@
       background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
       transform: rotate(45deg);
       opacity: 0.3;
+      z-index: -1;
+      pointer-events: none;
     }
     .btn-telegram {
       background: #0088cc;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
@@ -88,20 +94,32 @@
       padding: 12px 24px;
       font-weight: bold;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 2;
+      width: auto;
+      text-align: center;
     }
     .btn-telegram:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(0, 136, 204, 0.5);
     }
+    .btn-offer {
+      display: block;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+    }
     footer {
       background: #2c2c2c;
       color: #f5e8c7;
+      z-index: 1;
     }
     .decorative-icon {
       position: absolute;
       opacity: 0.1;
       font-size: 80px;
       color: #d32f2f;
+      pointer-events: none;
+      z-index: -1;
     }
     .decorative-icon-top {
       top: 10px;
@@ -114,6 +132,7 @@
     .header-text {
       opacity: 0;
       animation: fadeIn 1s ease forwards;
+      z-index: 1;
     }
     @keyframes fadeIn {
       to {
@@ -147,7 +166,7 @@
       <i class="fas fa-yen-sign decorative-icon decorative-icon-top"></i>
       <h2 class="text-xl font-semibold mb-2 text-red-700">MoneyCat</h2>
       <p class="text-gray-600 mb-4">Đăng ký trực tuyến, giải ngân trong ngày, không cần thế chấp.</p>
-      <a href="#" class="block w-full text-center bg-gradient-to-r from-red-500 to-red-700 text-white py-2 rounded-full hover:from-red-600 hover:to-red-800 transition">Đăng ký ngay</a>
+      <a href="https://moneycat.vn/?TRANSACTION_ID=LGID01K2S1PKRX94D9PEARQSYW0VMY&utm_campaign=cpa&utm_content=126604&utm_medium=affiliate&utm_referrer=https%3A%2F%2Fcredigid.com%2FVay&utm_source=leadgid" class="btn-offer bg-gradient-to-r from-red-500 to-red-700 text-white py-2 rounded-full hover:from-red-600 hover:to-red-800 transition">Đăng ký ngay</a>
       <i class="fas fa-coins decorative-icon decorative-icon-bottom"></i>
     </div>
 
@@ -156,7 +175,7 @@
       <i class="fas fa-yen-sign decorative-icon decorative-icon-top"></i>
       <h2 class="text-xl font-semibold mb-2 text-red-700">Cash24</h2>
       <p class="text-gray-600 mb-4">Khoản vay ngắn hạn, thủ tục nhanh chóng, hỗ trợ khách hàng 24/7.</p>
-      <a href="#" class="block w-full text-center bg-gradient-to-r from-red-500 to-red-700 text-white py-2 rounded-full hover:from-red-600 hover:to-red-800 transition">Đăng ký ngay</a>
+      <a href="https://go.leadgid.com/aff_c?aff_id=126604&offer_id=4917" class="btn-offer bg-gradient-to-r from-red-500 to-red-700 text-white py-2 rounded-full hover:from-red-600 hover:to-red-800 transition">Đăng ký ngay</a>
       <i class="fas fa-coins decorative-icon decorative-icon-bottom"></i>
     </div>
 
@@ -165,7 +184,7 @@
       <i class="fas fa-yen-sign decorative-icon decorative-icon-top"></i>
       <h2 class="text-xl font-semibold mb-2 text-red-700">OnCredit</h2>
       <p class="text-gray-600 mb-4">Ứng dụng tài chính uy tín, hạn mức linh hoạt, giải ngân nhanh.</p>
-      <a href="#" class="block w-full text-center bg-gradient-to-r from-red-500 to-red-700 text-white py-2 rounded-full hover:from-red-600 hover:to-red-800 transition">Đăng ký ngay</a>
+      <a href="https://go.leadgid.com/aff_c?aff_id=126604&offer_id=4917" class="btn-offer bg-gradient-to-r from-red-500 to-red-700 text-white py-2 rounded-full hover:from-red-600 hover:to-red-800 transition">Đăng ký ngay</a>
       <i class="fas fa-coins decorative-icon decorative-icon-bottom"></i>
     </div>
   </section>
